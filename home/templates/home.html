@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+
+<link href="{% static 'css/scroll.css' %}?after" rel="stylesheet" />
+<style>
+    @font-face {
+        font-family: 'Happiness-Sans-Title';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #cont{
+        font-family: 'Happiness-Sans-Title';
+        font-size: 17pt;
+    }
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+        <!-- Page Content-->
+        <div class="container-fluid p-0" style="min-height: 100%; background-size: 100% 100%; background-repeat: no-repeat; background-image: url('{% static "img/학교.png" %}');">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content" style="width: auto;">
+                    <h1>
+                        LIKELION UNIV X <span><font style="color:rgb(239,65,74);" >H</font><font style="color:rgb(216,150,92);" >B</font><font style="color:rgb(57,138,159);" >N</font><font style="color:rgb(55,78,128);" >U</font></span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Since 2013
+                    </div>
+                    <br>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.instagram.com/hbu_likelion/?hl=ko"><i class="fab fa-instagram"></i></a>
+                        <a class="social-icon" href="https://github.com/dus001228/likelion_11th.git"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-at-%ED%95%9C%EB%B0%AD%EB%8C%80%ED%95%99%EA%B5%90-1252739578152373/"><i class="fab fa-facebook"></i></a>
+                        <a class="social-icon" href="https://open.kakao.com/o/syshtf0d"><i class="fas fa-comment"></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <a id = "hello" href="#michin"><span></span><span></span><span></span></a>
+
+        <div id ="michin" class="mt-3 p-5">
+        <h3 style="color: orange">
+            <i class="fas fa-paw"></i>멋쟁이 사자처럼이란?
+          </h3>
+          <br />
+          <p class="lead mb-5">
+            “POSSIBILITY TO REALITY" 멋쟁이사자처럼 대학은 테크 기반의 아이디어 실현을 위한 전국 최대 규모의 대학 연합 창업 동아리입니다.<br>
+            코딩을 해보신 적이 없어도 괜찮아요. 멋대 11기에서 코딩을 배워 자신만의 아이디어을 실현해 보세요.
+            <br><br>
+            다른 대학의 멋사인들은 어떤 아이디어를 가지고 있을까요? <br>
+            매년 여름, 전국 1,000여명 이상이 참가하는 멋대 전체 해커톤에 참가하여 직접 확인해보세요.
+          </p>
+
+
+        </div>
+        <hr>
+        <!-- what we do -->
+            <div class="container mt-5 mb-5">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">What we do?</h2>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4 mt-5">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa-solid fa-pen-nib fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3 class="my-3">STUDY</h4>
+                        <p class="text-muted" id="cont">서비스 빌딩을 위한 입체적 교육</p>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3 class="my-3">HACKATHON</h4>
+                        <p class="text-muted" id="cont">실제 아이디어가 구현되는 축제의 장</p>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-people-group fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3 class="my-3">NETWORK</h4>
+                        <p class="text-muted" id="cont">같은 목표를 가진 사람들과의 만남</p>
+                    </div>
+                </div>
+            </div>
+
+        
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block style %}
+<style>
+#coming {
+    display:block;
+    margin:auto;
+    width: 30%;
+    height: "auto";
+}
+#date{
+    text-align: center; 
+    font-family: 'Happiness-Sans-Title'; 
+    font-size: xx-large;
+}
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width:767px){
+    #coming {
+        display:block;
+        margin:auto;
+        width: 60%;
+        height: "auto";
+    }
+    #date{
+        text-align: center; 
+        font-family: 'Happiness-Sans-Title'; 
+        font-size: x-large;
+    }
+}
+</style>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div style="min-height: 100%">
+    <img id = "coming" class ="mt-5" src="{% static 'img/coming_soon.png' %}"/>
+    <div id = "date" class="mt-5">
+        <P>11기 아기사자 모집은 2월 13일 00:00 부로 시작될 예정입니다.</P>
+    </div>
+</div>
+{% endblock %}
+
+<!-- <section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Join us</h2>
+        <p>곧 모집을 시작합니다!</p>
+        <p class="mb-0">1.[ 지원서 다운로드 ] 버튼을 클릭한 후 지원서 다운로드</p>
+        <br>
+        <p class="mb-0">2.지원기간 ( 2월 26일 오전 0시 ~ 3월 3일 오후 5시) 내에 지원서 작성</p>
+        <br>
+        <p class="mb-0">3.[ 지원하기 ] 버튼을 클릭해 구글 폼 작성 및 지원서 업로드</p>
+        <br>
+        <p class="mb-0">4.각 문항 별 글자수 : 1000자 이내(공백 포함)</p>
+    </div>
+</section> -->
